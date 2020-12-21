@@ -309,13 +309,17 @@ default_render_buffer(Application_Links *app, View_ID view_id, Face_ID face_id,
         }
         
         // NOTE(Kevin): custom keywords
-        // TODO(Kevin): add the keywords
         Highlight_Pair pairs[ ] = {
             string_u8_litexpr( "u8" ), finalize_color( defcolor_keyword, 0 ), /* Use theme color "defcolor_keyword" first color. */
             string_u8_litexpr( "u16" ), finalize_color( defcolor_keyword, 0 ),
             string_u8_litexpr( "u32" ), finalize_color( defcolor_keyword, 0 ),
             string_u8_litexpr( "u64" ), finalize_color( defcolor_keyword, 0 ),
-            string_u8_litexpr( "u64" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "i8" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "i16" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "i32" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "i64" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "r32" ), finalize_color( defcolor_keyword, 0 ),
+            string_u8_litexpr( "r64" ), finalize_color( defcolor_keyword, 0 ),
             string_u8_litexpr( "__debugbreak" ), 0xffa46391 
         };
         // call the custom highlight function
