@@ -1,0 +1,160 @@
+4-coder Bindings
+December 22 2020
+
+Global
+------
+
+[ B Alt ]	toggle_filebar
+[ H Control ]	project_go_to_root_directory
+[ I Control Shift ]	list_all_functions_current_buffer
+[ I Control ]	interactive_switch_buffer
+[ K Control ]	interactive_kill_buffer
+[ M Alt Shift ]	goto_first_jump
+[ M Alt ]	build_in_build_panel
+[ N Alt Shift ]	goto_prev_jump
+[ N Alt ]	goto_next_jump
+[ N Control ]	interactive_new
+[ O Alt ]	open_in_other
+[ O Control ]	interactive_open_or_new
+[ S Control Shift ]	save_all_dirty_buffers
+[ U Alt ]	keyboard_macro_replay
+[ U Control Shift ]	keyboard_macro_finish_recording
+[ U Control ]	keyboard_macro_start_recording
+[ X Alt Shift ]	project_command_lister
+[ X Alt ]	command_lister
+[ Z Alt Shift ]	execute_previous_cli
+[ Z Alt ]	execute_any_cli
+[ Comma Alt ]	close_build_panel
+[ Comma Control Shift ]	change_active_panel_backwards
+[ Comma Control ]	change_active_panel
+[ Period Alt ]	change_to_build_panel
+[ F1 ]	project_fkey_command
+[ F2 ]	project_fkey_command
+[ F3 ]	project_fkey_command
+[ F4 Alt ]	exit_4coder
+[ F4 ]	project_fkey_command
+[ F5 ]	project_fkey_command
+[ F6 ]	project_fkey_command
+[ F7 ]	project_fkey_command
+[ F8 ]	project_fkey_command
+[ F9 ]	project_fkey_command
+[ F10 ]	project_fkey_command
+[ F11 ]	project_fkey_command
+[ F12 ]	project_fkey_command
+[ F13 ]	project_fkey_command
+[ F14 ]	project_fkey_command
+[ F15 ]	project_fkey_command
+[ F16 ]	project_fkey_command
+[ MoveWheel Control ]	mouse_wheel_change_face_size
+[ MoveWheel ]	mouse_wheel_scroll
+[ Startup ]	default_startup
+[ TryExit ]	default_try_exit
+
+File
+----
+
+[ TextInput ]	write_text_input
+[ A Control ]	replace_in_range
+[ C Control ]	copy
+[ D Control Shift ]	delete_line
+[ D Control ]	delete_range
+[ E Control Shift ]	left_adjust_view
+[ E Control ]	center_view
+[ F Alt ]	list_all_substring_locations_case_insensitive
+[ F Control Shift ]	list_all_locations
+[ F Control ]	search
+[ G Control Shift ]	list_all_locations_of_selection
+[ G Control ]	goto_line
+[ J Control ]	snippet_lister
+[ K Control Shift ]	kill_buffer
+[ L Control ]	duplicate_line
+[ M Control ]	cursor_mark_swap
+[ O Control Shift ]	reopen
+[ Q Alt ]	query_replace_selection
+[ Q Control Shift ]	query_replace_identifier
+[ Q Control ]	query_replace
+[ R Control ]	reverse_search
+[ S Control Shift ]	save_all_dirty_buffers
+[ S Control ]	save
+[ T Control Shift ]	list_all_locations_of_identifier
+[ T Control ]	search_identifier
+[ V Control Shift ]	paste_next_and_indent
+[ V Control ]	paste_and_indent
+[ X Control ]	cut
+[ Y Control ]	redo
+[ Z Control ]	undo
+[ 1 Control ]	view_buffer_other_panel
+[ 2 Control ]	swap_panels
+[ Space Control ]	set_mark
+[ Period Control Shift ]	view_jump_list_with_lister
+[ Up Alt ]	move_line_up
+[ Up Control ]	move_up_to_blank_line_end
+[ Up ]	move_up
+[ Down Alt ]	move_line_down
+[ Down Control ]	move_down_to_blank_line_end
+[ Down ]	move_down
+[ Left Control ]	move_left_whitespace_boundary
+[ Left ]	move_left
+[ Right Control ]	move_right_whitespace_boundary
+[ Right ]	move_right
+[ Backspace Alt ]	snipe_backward_whitespace_or_token_boundary
+[ Backspace Control ]	backspace_alpha_numeric_boundary
+[ Backspace ]	backspace_char
+[ Return Shift ]	if_read_only_goto_position_same_panel
+[ Return ]	if_read_only_goto_position
+[ Delete Alt ]	snipe_forward_whitespace_or_token_boundary
+[ Delete Control ]	delete_alpha_numeric_boundary
+[ Delete ]	delete_char
+[ Home ]	seek_beginning_of_line
+[ End ]	seek_end_of_line
+[ PageUp Control ]	goto_beginning_of_file
+[ PageUp ]	page_up
+[ PageDown Control ]	goto_end_of_file
+[ PageDown ]	page_down
+[ Left ]	click_set_cursor_and_mark
+[ Left Release ]	click_set_cursor
+[ MoveMove ]	click_set_cursor_if_lbutton
+[ ClickActivateView ]	click_set_cursor_and_mark
+
+Code
+----
+
+[ TextInput ]	write_text_and_auto_indent
+[ D Alt ]	list_all_locations_of_type_definition
+[ I Alt ]	if0_off
+[ R Alt ]	write_block
+[ T Alt Shift ]	list_all_locations_of_type_definition_of_identifier
+[ T Alt ]	write_todo
+[ Y Alt ]	write_note
+[ 0 Control ]	write_zero_struct
+[ 1 Alt ]	open_file_in_quotes
+[ 2 Alt ]	open_matching_file_cpp
+[ Minus Alt ]	delete_current_scope
+[ LeftBracket Alt Shift ]	select_surrounding_scope_maximal
+[ LeftBracket Alt ]	select_surrounding_scope
+[ LeftBracket Control Shift ]	open_long_braces_semicolon
+[ LeftBracket Control ]	open_long_braces
+[ RightBracket Alt Shift ]	select_prev_top_most_scope
+[ RightBracket Alt ]	select_prev_scope_absolute
+[ RightBracket Control Shift ]	open_long_braces_break
+[ Semicolon Control ]	comment_line_toggle
+[ Quote Alt Shift ]	select_next_scope_after_current
+[ Quote Alt ]	select_next_scope_absolute
+[ ForwardSlash Alt ]	place_in_scope
+[ Tab Shift Control ]	word_complete_drop_down
+[ Tab Shift ]	auto_indent_line_at_cursor
+[ Tab Control ]	auto_indent_range
+[ Tab ]	word_complete
+[ Left Alt ]	move_left_alpha_numeric_or_camel_boundary
+[ Left Control ]	move_left_alpha_numeric_boundary
+[ Right Alt ]	move_right_alpha_numeric_or_camel_boundary
+[ Right Control ]	move_right_alpha_numeric_boundary
+
+Custom
+------
+
+[ ~ Ctrl ]	close panel
+[ - Ctrl ]	split panel horizontal
+[ \ Ctrl ]	split panel vertically
+[ = Ctrl Shift ]	open all code recursive (in all sub directories)
+[ - Ctrl Shift ]	close all code files
